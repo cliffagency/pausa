@@ -16,7 +16,7 @@
         <div class="container">
             <div class="logo-container">
                 <a href="#">
-                    <h1 class="restaurant-logo">Pausa</h1>
+                    <img src="pausa.JPG" alt="Pausa" class="restaurant-logo-image">
                 </a>
             </div>
             <nav>
@@ -46,6 +46,7 @@
                 <button class="category-btn" data-category="tenders">Tenders</button>
                 <button class="category-btn" data-category="pasta">Pasta</button>
                 <button class="category-btn" data-category="plats">Plats</button>
+                <button class="category-btn" data-category="brunch">Brunch</button>
                 <button class="category-btn" data-category="cafes-chauds">Cafés Chauds</button>
                 <button class="category-btn" data-category="cafes-glaces">Cafés Glacés</button>
                 <button class="category-btn" data-category="smoothie">Smoothies</button>
@@ -56,1328 +57,1451 @@
         </div>
     </section>
 
-    <section class="menu-sections-horizontal">
+    <section class="menu-sections-vertical">
         <div class="container">
             <!-- CRÊPES SECTION -->
-            <div class="menu-section active" data-category="crepes">
-                <div class="section-header">
+            <div class="menu-section collapsible active" data-category="crepes">
+                <div class="section-header collapsible-header">
                     <h2 class="section-title">Crêpes</h2>
+                    <span class="collapse-icon">−</span>
                 </div>
-                
-                <div class="dish" data-dish="crepe-chocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20pausa%20.glb" alt="Crêpe Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content">
+                    <div class="dish" data-dish="crepe-chocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20pausa%20.glb" alt="Crêpe Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Chocolat</h3></div>
+                            <p class="dish-desc">Une crêpe délicatement garnie de chocolat fondant</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Chocolat</h3></div>
-                        <p class="dish-desc">Une crêpe délicatement garnie de chocolat fondant</p>
+                    
+                    <div class="dish" data-dish="crepe-banane">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20banane.glb" alt="Crêpe Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Banane</h3></div>
+                            <p class="dish-desc">Bananes fraîches sur une crêpe dorée</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-banane">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20banane.glb" alt="Crêpe Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="crepe-fruits">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20fruits.glb" alt="Crêpe Aux Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Aux Fruits</h3></div>
+                            <p class="dish-desc">Mélange de fruits de saison frais</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Banane</h3></div>
-                        <p class="dish-desc">Bananes fraîches sur une crêpe dorée</p>
+                    
+                    <div class="dish" data-dish="crepe-roulee">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pau%20cre%CC%82pe%20rouli%20.glb" alt="Crêpe Roulée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Roulée</h3></div>
+                            <p class="dish-desc">Banane, konafa, pistache</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-fruits">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20fruits.glb" alt="Crêpe Aux Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="crepe-bueno">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20bueno.glb" alt="Crêpe Bueno" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Bueno</h3></div>
+                            <p class="dish-desc">Au chocolat Kinder Bueno</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Aux Fruits</h3></div>
-                        <p class="dish-desc">Mélange de fruits de saison frais</p>
+                    
+                    <div class="dish" data-dish="crepe-snickers">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Crêpe Snickers" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Snickers ou Ferrero</h3></div>
+                            <p class="dish-desc">Au choix : Snickers ou Ferrero Rocher</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-roulee">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pau%20cre%CC%82pe%20rouli%20.glb" alt="Crêpe Roulée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Roulée</h3></div>
-                        <p class="dish-desc">Banane, konafa, pistache</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-bueno">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Cre%CC%82pe%20bueno.glb" alt="Crêpe Bueno" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Bueno</h3></div>
-                        <p class="dish-desc">Au chocolat Kinder Bueno</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-snickers">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Crêpe Snickers" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Snickers ou Ferrero</h3></div>
-                        <p class="dish-desc">Au choix : Snickers ou Ferrero Rocher</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="crepe-dubai">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Crepe%20Dubai.glb" alt="Crêpe Dubai" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crêpe Dubai</h3></div>
-                        <p class="dish-desc">Crème pâtissière, fruits secs, feuille d'or</p>
+                    
+                    <div class="dish" data-dish="crepe-dubai">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Crepe%20Dubai.glb" alt="Crêpe Dubai" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crêpe Dubai</h3></div>
+                            <p class="dish-desc">Crème pâtissière, fruits secs, feuille d'or</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- PANCAKE SECTION -->
-            <div class="menu-section" data-category="pancake">
-                <div class="section-header"><h2 class="section-title">Pancake</h2></div>
-                
-                <div class="dish" data-dish="pancake-chocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pancake%20choco.glb" alt="Pancake Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
-                        <p class="dish-desc">Pancakes au chocolat, sauce chocolat</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="pancake">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Pancake</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="pancake-caramel">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Caramel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="pancake-chocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pancake%20choco.glb" alt="Pancake Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
+                            <p class="dish-desc">Pancakes au chocolat, sauce chocolat</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Caramel</h3></div>
-                        <p class="dish-desc">Pancakes nappés de caramel beurre salé</p>
+                    
+                    <div class="dish" data-dish="pancake-caramel">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Caramel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Caramel</h3></div>
+                            <p class="dish-desc">Pancakes nappés de caramel beurre salé</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pancake-fruits">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pancake-fruits">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Fruits</h3></div>
+                            <p class="dish-desc">Pancakes accompagnés de fruits frais</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Fruits</h3></div>
-                        <p class="dish-desc">Pancakes accompagnés de fruits frais</p>
+                    
+                    <div class="dish" data-dish="pancake-dubai">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Dubai" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Dubai</h3></div>
+                            <p class="dish-desc">Pancakes avec crème pâtissière, amandes, miel</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pancake-dubai">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancake Dubai" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Dubai</h3></div>
-                        <p class="dish-desc">Pancakes avec crème pâtissière, amandes, miel</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="pancake-pausa">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancakes Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pancakes Pausa</h3></div>
-                        <p class="dish-desc">3 chocolats différents ou 3 fruits assortis</p>
+                    
+                    <div class="dish" data-dish="pancake-pausa">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pancakes Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pancakes Pausa</h3></div>
+                            <p class="dish-desc">3 chocolats différents ou 3 fruits assortis</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- GAUFRES SECTION -->
-            <div class="menu-section" data-category="gaufres">
-                <div class="section-header"><h2 class="section-title">Gaufres</h2></div>
-                
-                <div class="dish" data-dish="gaufre-chocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20choco.glb" alt="Gaufre Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
-                        <p class="dish-desc">Gaufre recouverte de chocolat fondant</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="gaufres">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Gaufres</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="gaufre-fruits">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20fruits.glb" alt="Gaufre Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="gaufre-chocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20choco.glb" alt="Gaufre Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
+                            <p class="dish-desc">Gaufre recouverte de chocolat fondant</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Fruits</h3></div>
-                        <p class="dish-desc">Gaufre avec fruits frais de saison</p>
+                    
+                    <div class="dish" data-dish="gaufre-fruits">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20fruits.glb" alt="Gaufre Fruits" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Fruits</h3></div>
+                            <p class="dish-desc">Gaufre avec fruits frais de saison</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="gaufre-multichocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20chwakel.glb" alt="Gaufre Multi-chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="gaufre-multichocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20chwakel.glb" alt="Gaufre Multi-chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Multi-chocolat</h3></div>
+                            <p class="dish-desc">Mélange de chocolats différents</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Multi-chocolat</h3></div>
-                        <p class="dish-desc">Mélange de chocolats différents</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="gaufre-banane">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20banane.glb" alt="Gaufre Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
-                        <p class="dish-desc">Gaufre avec bananes caramélisées</p>
+                    
+                    <div class="dish" data-dish="gaufre-banane">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gaufre%20banane.glb" alt="Gaufre Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
+                            <p class="dish-desc">Gaufre avec bananes caramélisées</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- SALADES SECTION -->
-            <div class="menu-section" data-category="salades">
-                <div class="section-header"><h2 class="section-title">Salades</h2></div>
-                
-                <div class="dish" data-dish="salade-cesar">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pausa%20Ce%CC%81sar.glb" alt="Salade César" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Salade César</h3></div>
-                        <p class="dish-desc">Poulet, laitue, tomates cerises, parmesan, œuf dur, croûtons</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="salades">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Salades</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="salade-mediterraneenne">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Méditerranéenne" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="salade-cesar">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pausa%20Ce%CC%81sar.glb" alt="Salade César" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Salade César</h3></div>
+                            <p class="dish-desc">Poulet, laitue, tomates cerises, parmesan, œuf dur, croûtons</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Salade Méditerranéenne</h3></div>
-                        <p class="dish-desc">Laitue, tomates, concombre, olives, mais, oignon, herbes</p>
+                    
+                    <div class="dish" data-dish="salade-mediterraneenne">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Méditerranéenne" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Salade Méditerranéenne</h3></div>
+                            <p class="dish-desc">Laitue, tomates, concombre, olives, mais, oignon, herbes</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="salade-avocat-saumon">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Avocat & Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="salade-avocat-saumon">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Avocat & Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Salade Avocat & Saumon</h3></div>
+                            <p class="dish-desc">Avocat, saumon fumé, citron</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Salade Avocat & Saumon</h3></div>
-                        <p class="dish-desc">Avocat, saumon fumé, citron</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="salade-burrata">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Burrata" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Salade Burrata</h3></div>
-                        <p class="dish-desc">Burrata, tomates cerises, roquette</p>
+                    
+                    <div class="dish" data-dish="salade-burrata">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Salade Burrata" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Salade Burrata</h3></div>
+                            <p class="dish-desc">Burrata, tomates cerises, roquette</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- GRATINS SECTION -->
-            <div class="menu-section" data-category="gratins">
-                <div class="section-header"><h2 class="section-title">Gratins</h2></div>
-                
-                <div class="dish" data-dish="gratin-viande">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gratin%20pausa.glb" alt="Gratin Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Gratin Viande Hachée</h3></div>
-                        <p class="dish-desc">Viande hachée savoureuse gratinée au fromage</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="gratins">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Gratins</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="gratin-poulet">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gratin%20pausa.glb" alt="Gratin Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="gratin-viande">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gratin%20pausa.glb" alt="Gratin Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Gratin Viande Hachée</h3></div>
+                            <p class="dish-desc">Viande hachée savoureuse gratinée au fromage</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Gratin Poulet</h3></div>
-                        <p class="dish-desc">Poulet tendre gratiné avec sauce crémeuse</p>
+                    
+                    <div class="dish" data-dish="gratin-poulet">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Gratin%20pausa.glb" alt="Gratin Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Gratin Poulet</h3></div>
+                            <p class="dish-desc">Poulet tendre gratiné avec sauce crémeuse</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- PIZZA SECTION -->
-            <div class="menu-section" data-category="pizza">
-                <div class="section-header"><h2 class="section-title">Pizza</h2></div>
-                
-                <div class="dish" data-dish="pizza-marguerite">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Marguerite" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Marguerite</h3></div>
-                        <p class="dish-desc">Sauce tomate, mozzarella, tomates cerises</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="pizza">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Pizza</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="pizza-pollo">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20pollo.glb" alt="Pizza Pollo" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="pizza-marguerite">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Marguerite" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Marguerite</h3></div>
+                            <p class="dish-desc">Sauce tomate, mozzarella, tomates cerises</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pollo</h3></div>
-                        <p class="dish-desc">Sauce blanche, poulet, champignons, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-pollo">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20pollo.glb" alt="Pizza Pollo" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pollo</h3></div>
+                            <p class="dish-desc">Sauce blanche, poulet, champignons, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-texan">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Texan.glb" alt="Pizza Texan" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pizza-texan">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Texan.glb" alt="Pizza Texan" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Texan</h3></div>
+                            <p class="dish-desc">Sauce tomate, poulet, poivrons, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Texan</h3></div>
-                        <p class="dish-desc">Sauce tomate, poulet, poivrons, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-forestiere">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20frontie%CC%80re%20.glb" alt="Pizza Forestière" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Forestière</h3></div>
+                            <p class="dish-desc">Sauce tomate, viande hachée, oignons caramélisés, champignons, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-forestiere">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20frontie%CC%80re%20.glb" alt="Pizza Forestière" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pizza-smoky">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20smoking.glb" alt="Pizza Smoky" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Smoky</h3></div>
+                            <p class="dish-desc">Sauce smoky, poulet fumé, dinde fumée, fromage fumé, viande fumée, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Forestière</h3></div>
-                        <p class="dish-desc">Sauce tomate, viande hachée, oignons caramélisés, champignons, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-saumon">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pizza Saumon</h3></div>
+                            <p class="dish-desc">Sauce blanche, saumon, oignons, tomates cerises, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-smoky">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pizza%20smoking.glb" alt="Pizza Smoky" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pizza-delmar">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Del Mar" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Del Mar</h3></div>
+                            <p class="dish-desc">Fruits de mer, crevettes, calmars, sauce tomate ou blanche, mozzarella, citron</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Smoky</h3></div>
-                        <p class="dish-desc">Sauce smoky, poulet fumé, dinde fumée, fromage fumé, viande fumée, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-4fromages">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Quatre Fromages" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Quatre Fromages</h3></div>
+                            <p class="dish-desc">Gouda, gruyère, camembert, mozzarella</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-saumon">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pizza-avocat-saumon">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Avocat & Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Avocat & Saumon</h3></div>
+                            <p class="dish-desc">Sauce blanche, saumon, avocat, tomates cerises, mozzarella</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pizza Saumon</h3></div>
-                        <p class="dish-desc">Sauce blanche, saumon, oignons, tomates cerises, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-mexicano">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Mexico.glb" alt="Pizza Mexicano" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Mexicano</h3></div>
+                            <p class="dish-desc">Sauce tomate, poulet, poivrons piquants, mais, cheddar, mozzarella</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-delmar">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Del Mar" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Del Mar</h3></div>
-                        <p class="dish-desc">Fruits de mer, crevettes, calmars, sauce tomate ou blanche, mozzarella, citron</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-4fromages">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Quatre Fromages" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Quatre Fromages</h3></div>
-                        <p class="dish-desc">Gouda, gruyère, camembert, mozzarella</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-avocat-saumon">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Avocat & Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Avocat & Saumon</h3></div>
-                        <p class="dish-desc">Sauce blanche, saumon, avocat, tomates cerises, mozzarella</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-mexicano">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Mexico.glb" alt="Pizza Mexicano" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Mexicano</h3></div>
-                        <p class="dish-desc">Sauce tomate, poulet, poivrons piquants, mais, cheddar, mozzarella</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="pizza-vegetarienne">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Végétarienne" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Végétarienne</h3></div>
-                        <p class="dish-desc">Sauce tomate, poivrons, oignons, courgettes, mais, tomates cerises, cheddar, mozzarella</p>
+                    
+                    <div class="dish" data-dish="pizza-vegetarienne">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pizza Végétarienne" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Végétarienne</h3></div>
+                            <p class="dish-desc">Sauce tomate, poivrons, oignons, courgettes, mais, tomates cerises, cheddar, mozzarella</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- BURGERS SECTION -->
-            <div class="menu-section" data-category="burgers">
-                <div class="section-header"><h2 class="section-title">Burgers</h2></div>
-                
-                <div class="dish" data-dish="burger-classique">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Classique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Burger Classique</h3></div>
-                        <p class="dish-desc">Viande hachée, salade, tomate, oignon, sauce fromagère</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="burgers">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Burgers</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="burger-autrentique">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Autrentique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="burger-classique">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Classique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Burger Classique</h3></div>
+                            <p class="dish-desc">Viande hachée, salade, tomate, oignon, sauce fromagère</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Burger Autrentique</h3></div>
-                        <p class="dish-desc">Viande hachée, salade, tomate, oignon, sauce fromagère, sauce tartare</p>
+                    
+                    <div class="dish" data-dish="burger-autrentique">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Autrentique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Burger Autrentique</h3></div>
+                            <p class="dish-desc">Viande hachée, salade, tomate, oignon, sauce fromagère, sauce tartare</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="burger-pausa">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20pausa.glb" alt="Burger Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="burger-pausa">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20pausa.glb" alt="Burger Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Burger Pausa</h3></div>
+                            <p class="dish-desc">Double steak, barbecue, oignons caramélisés, gouda, pepperoni, dinde fumée</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Burger Pausa</h3></div>
-                        <p class="dish-desc">Double steak, barbecue, oignons caramélisés, gouda, pepperoni, dinde fumée</p>
+                    
+                    <div class="dish" data-dish="burger-iggy">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Iggy" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Burger Iggy</h3></div>
+                            <p class="dish-desc">Steak, salade, tomate, oignon, sauce fromagère, sauce tartare</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="burger-iggy">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Iggy" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="burger-americain">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Américain" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Burger Américain</h3></div>
+                            <p class="dish-desc">Viande hachée, jambon de dinde, gouda, barbecue, sauce tartare, oignons caramélisés</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Burger Iggy</h3></div>
-                        <p class="dish-desc">Steak, salade, tomate, oignon, sauce fromagère, sauce tartare</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="burger-americain">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20koulchi.glb" alt="Burger Américain" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Burger Américain</h3></div>
-                        <p class="dish-desc">Viande hachée, jambon de dinde, gouda, barbecue, sauce tartare, oignons caramélisés</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="burger-kfc">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20kfc.glb" alt="KFC Burger" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">KFC Burger</h3></div>
-                        <p class="dish-desc">Poulet pané, sauce tartare, sauce fromagère, salade, tomate, oignon, gouda</p>
+                    
+                    <div class="dish" data-dish="burger-kfc">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Burger%20kfc.glb" alt="KFC Burger" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">KFC Burger</h3></div>
+                            <p class="dish-desc">Poulet pané, sauce tartare, sauce fromagère, salade, tomate, oignon, gouda</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- TACOS SECTION -->
-            <div class="menu-section" data-category="tacos">
-                <div class="section-header"><h2 class="section-title">Tacos</h2></div>
-                
-                <div class="dish" data-dish="tacos-poulet">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tacos Poulet</h3></div>
-                        <p class="dish-desc">Tacos garnis de poulet mariné</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="tacos">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Tacos</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="tacos-viande">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="tacos-poulet">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tacos Poulet</h3></div>
+                            <p class="dish-desc">Tacos garnis de poulet mariné</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tacos Viande Hachée</h3></div>
-                        <p class="dish-desc">Tacos garnis de viande hachée épicée</p>
+                    
+                    <div class="dish" data-dish="tacos-viande">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tacos Viande Hachée</h3></div>
+                            <p class="dish-desc">Tacos garnis de viande hachée épicée</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="tacos-mixte">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Mixte" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="tacos-mixte">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Tacos Mixte" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tacos Mixte</h3></div>
+                            <p class="dish-desc">Mélange poulet et viande hachée</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tacos Mixte</h3></div>
-                        <p class="dish-desc">Mélange poulet et viande hachée</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="tacos-crispy">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Crispy Tacos" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Crispy Tacos</h3></div>
-                        <p class="dish-desc">Tacos croustillants avec garniture au choix</p>
+                    
+                    <div class="dish" data-dish="tacos-crispy">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tacos%20plt.glb" alt="Crispy Tacos" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Crispy Tacos</h3></div>
+                            <p class="dish-desc">Tacos croustillants avec garniture au choix</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- SANDWICH SECTION -->
-            <div class="menu-section" data-category="sandwich">
-                <div class="section-header"><h2 class="section-title">Sandwich</h2></div>
-                
-                <div class="dish" data-dish="panazo">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20panazo%20.glb" alt="Panazo" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Panazo</h3></div>
-                        <p class="dish-desc">Pané, salade, gouda, tomate, oignon, sauce tartare</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="sandwich">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Sandwich</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="sandwich-steak">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Sandwich Steak" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="panazo">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20panazo%20.glb" alt="Panazo" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Panazo</h3></div>
+                            <p class="dish-desc">Pané, salade, gouda, tomate, oignon, sauce tartare</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Steak</h3></div>
-                        <p class="dish-desc">Steak, tomates cerises, salade, roquette, oignon</p>
+                    
+                    <div class="dish" data-dish="sandwich-steak">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Sandwich Steak" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Steak</h3></div>
+                            <p class="dish-desc">Steak, tomates cerises, salade, roquette, oignon</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="sandwich-marine">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20marine%CC%81.glb" alt="Sandwich Marine" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="sandwich-marine">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20marine%CC%81.glb" alt="Sandwich Marine" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Marine - Pain Maison</h3></div>
+                            <p class="dish-desc">Pain maison garni de produits marins</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Marine - Pain Maison</h3></div>
-                        <p class="dish-desc">Pain maison garni de produits marins</p>
+                    
+                    <div class="dish" data-dish="sandwich-poulet-creme">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Sandwich Poulet à la Crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Poulet à la Crème</h3></div>
+                            <p class="dish-desc">Poulet à la crème, gouda, salade, tomate</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="sandwich-poulet-creme">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Sandwich Poulet à la Crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Poulet à la Crème</h3></div>
-                        <p class="dish-desc">Poulet à la crème, gouda, salade, tomate</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="sandwich-viande">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20viande%20hache%CC%81e%20.glb" alt="Sandwich Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Sandwich Viande Hachée</h3></div>
-                        <p class="dish-desc">Pain maison, viande hachée, gouda, oignon, salade, tomate</p>
+                    
+                    <div class="dish" data-dish="sandwich-viande">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Sandwich%20viande%20hache%CC%81e%20.glb" alt="Sandwich Viande Hachée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Sandwich Viande Hachée</h3></div>
+                            <p class="dish-desc">Pain maison, viande hachée, gouda, oignon, salade, tomate</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- TENDERS SECTION -->
-            <div class="menu-section" data-category="tenders">
-                <div class="section-header"><h2 class="section-title">Tenders</h2></div>
-                
-                <div class="dish" data-dish="3-tenders">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%203.glb" alt="3 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">3 Tenders</h3></div>
-                        <p class="dish-desc">3 tenders avec sauce au choix</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="tenders">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Tenders</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="5-tenders">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%205.glb" alt="5 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="3-tenders">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%203.glb" alt="3 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">3 Tenders</h3></div>
+                            <p class="dish-desc">3 tenders avec sauce au choix</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">5 Tenders</h3></div>
-                        <p class="dish-desc">5 tenders avec frites et sauce</p>
+                    
+                    <div class="dish" data-dish="5-tenders">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%205.glb" alt="5 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">5 Tenders</h3></div>
+                            <p class="dish-desc">5 tenders avec frites et sauce</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="10-tenders">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%2010.glb" alt="10 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">10 Tenders</h3></div>
-                        <p class="dish-desc">10 tenders avec frites et double sauce</p>
+                    
+                    <div class="dish" data-dish="10-tenders">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Tenders%2010.glb" alt="10 Tenders" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">10 Tenders</h3></div>
+                            <p class="dish-desc">10 tenders avec frites et double sauce</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- PASTA SECTION -->
-            <div class="menu-section" data-category="pasta">
-                <div class="section-header"><h2 class="section-title">Pasta</h2></div>
-                
-                <div class="dish" data-dish="tagliatelle-carbonara">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Carbonara" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tagliatelle Carbonara</h3></div>
-                        <p class="dish-desc">Sauce carbonara, parmesan</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="pasta">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Pasta</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="tagliatelle-poulet-dinde">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Poulet & Dinde Fumée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="tagliatelle-carbonara">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Carbonara" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tagliatelle Carbonara</h3></div>
+                            <p class="dish-desc">Sauce carbonara, parmesan</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tagliatelle Poulet & Dinde Fumée</h3></div>
-                        <p class="dish-desc">Sauce blanche, poulet + dinde fumée</p>
+                    
+                    <div class="dish" data-dish="tagliatelle-poulet-dinde">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Poulet & Dinde Fumée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tagliatelle Poulet & Dinde Fumée</h3></div>
+                            <p class="dish-desc">Sauce blanche, poulet + dinde fumée</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="penne-saumon">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne au Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="penne-saumon">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne au Saumon" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Penne au Saumon</h3></div>
+                            <p class="dish-desc">Saumon, sauce blanche</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Penne au Saumon</h3></div>
-                        <p class="dish-desc">Saumon, sauce blanche</p>
+                    
+                    <div class="dish" data-dish="penne-saumon-fume">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne Saumon Fumé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Penne Saumon Fumé</h3></div>
+                            <p class="dish-desc">Saumon fumé, tomates cerises</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="penne-saumon-fume">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne Saumon Fumé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="bolognaise">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pasta%20bolog.glb" alt="Bolognaise" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Bolognaise</h3></div>
+                            <p class="dish-desc">Sauce tomate, viande hachée</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Penne Saumon Fumé</h3></div>
-                        <p class="dish-desc">Saumon fumé, tomates cerises</p>
+                    
+                    <div class="dish" data-dish="spaghetti-tomate">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Spaghetti Tomate" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Spaghetti Tomate</h3></div>
+                            <p class="dish-desc">Sauce tomate, tomates cerises, parmesan</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="bolognaise">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pasta%20bolog.glb" alt="Bolognaise" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="pates-rosee">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pâtes Sauce Rosée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pâtes Sauce Rosée</h3></div>
+                            <p class="dish-desc">Sauce rosée, parmesan</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Bolognaise</h3></div>
-                        <p class="dish-desc">Sauce tomate, viande hachée</p>
+                    
+                    <div class="dish" data-dish="tagliatelle-rosee-poulet">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Sauce Rosée Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Tagliatelle Sauce Rosée Poulet</h3></div>
+                            <p class="dish-desc">Poulet, poivrons, tomates cerises</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="spaghetti-tomate">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Spaghetti Tomate" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="wok-nouilles">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Wok de Nouilles" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Wok de Nouilles</h3></div>
+                            <p class="dish-desc">Légumes, bœuf</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Spaghetti Tomate</h3></div>
-                        <p class="dish-desc">Sauce tomate, tomates cerises, parmesan</p>
+                    
+                    <div class="dish" data-dish="penne-pesto">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne au Pesto" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Penne au Pesto</h3></div>
+                            <p class="dish-desc">Pesto, parmesan</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="pates-rosee">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pâtes Sauce Rosée" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pâtes Sauce Rosée</h3></div>
-                        <p class="dish-desc">Sauce rosée, parmesan</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="tagliatelle-rosee-poulet">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Tagliatelle Sauce Rosée Poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Tagliatelle Sauce Rosée Poulet</h3></div>
-                        <p class="dish-desc">Poulet, poivrons, tomates cerises</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="wok-nouilles">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Wok de Nouilles" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Wok de Nouilles</h3></div>
-                        <p class="dish-desc">Légumes, bœuf</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="penne-pesto">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne au Pesto" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Penne au Pesto</h3></div>
-                        <p class="dish-desc">Pesto, parmesan</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="penne-pesto-tomates">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne Pesto Tomates Cerises" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Penne Pesto Tomates Cerises</h3></div>
-                        <p class="dish-desc">Pesto, tomates cerises</p>
+                    
+                    <div class="dish" data-dish="penne-pesto-tomates">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Penne Pesto Tomates Cerises" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Penne Pesto Tomates Cerises</h3></div>
+                            <p class="dish-desc">Pesto, tomates cerises</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- PLATS SECTION -->
-            <div class="menu-section" data-category="plats">
-                <div class="section-header"><h2 class="section-title">Plats</h2></div>
-                
-                <div class="dish" data-dish="poulet-pane-creme">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Poulet pané à la crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+            <div class="menu-section collapsible" data-category="plats">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Plats</h2>
+                    <span class="collapse-icon">+</span>
+                </div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="poulet-pane-creme">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Poulet pané à la crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Poulet pané à la crème</h3></div>
+                            <p class="dish-desc">Poulet pané, sauce crème, champignons</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Poulet pané à la crème</h3></div>
-                        <p class="dish-desc">Poulet pané, sauce crème, champignons</p>
+                    
+                    <div class="dish" data-dish="supreme-poulet">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Suprem.glb" alt="Suprême de poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Suprême de poulet</h3></div>
+                            <p class="dish-desc">Poulet tendre, sauce crème, herbes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="poulet-mexicain">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Poulet mexicain" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Poulet mexicain</h3></div>
+                            <p class="dish-desc">Poulet épicé, poivrons</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="fajitas-poulet">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Fajitas poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Fajitas poulet</h3></div>
+                            <p class="dish-desc">Poulet, légumes sautés</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="parmigiana">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Parmigiana" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Parmigiana</h3></div>
+                            <p class="dish-desc">Poulet pané, sauce tomate, fromage gratiné</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="steak-cheval">
+                        <div class="dish-model">
+                            <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pausa%20steak%20a%CC%80%20cheval.glb" alt="Steak à cheval" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Steak à cheval</h3></div>
+                            <p class="dish-desc">Steak + œuf au plat</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="plat-healthy">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Plat Healthy" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Plat Healthy - Poulet / Viande hachée</h3></div>
+                            <p class="dish-desc">Légumes grillés, portion protéinée</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dish" data-dish="cordon-bleu">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cordon Bleu à la crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Cordon Bleu à la crème</h3></div>
+                            <p class="dish-desc">Poulet farci au fromage, crème onctueuse</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="dish" data-dish="supreme-poulet">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Suprem.glb" alt="Suprême de poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Suprême de poulet</h3></div>
-                        <p class="dish-desc">Poulet tendre, sauce crème, herbes</p>
-                    </div>
+            </div>
+            
+            <!-- BRUNCH SECTION -->
+            <div class="menu-section collapsible" data-category="brunch">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Brunch</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="poulet-mexicain">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Poulet mexicain" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="brunch-algerien">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Brunch Algérien" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Algérien</h3></div>
+                            <p class="dish-desc">Brunch traditionnel algérien avec spécialités locales</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Poulet mexicain</h3></div>
-                        <p class="dish-desc">Poulet épicé, poivrons</p>
+                    
+                    <div class="dish" data-dish="brunch-francais">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Brunch Français" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Français</h3></div>
+                            <p class="dish-desc">Brunch à la française avec croissants et viennoiseries</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="fajitas-poulet">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Fajitas poulet" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="brunch-traditionnel">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Brunch Traditionnel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Traditionnel</h3></div>
+                            <p class="dish-desc">Brunch traditionnel avec œufs, bacon et pancakes</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Fajitas poulet</h3></div>
-                        <p class="dish-desc">Poulet, légumes sautés</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="parmigiana">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Parmigiana" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Parmigiana</h3></div>
-                        <p class="dish-desc">Poulet pané, sauce tomate, fromage gratiné</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="steak-cheval">
-                    <div class="dish-model">
-                        <model-viewer src="https://pub-72b1924cc2494065a2af6bf69f360686.r2.dev/Pausa%20steak%20a%CC%80%20cheval.glb" alt="Steak à cheval" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Steak à cheval</h3></div>
-                        <p class="dish-desc">Steak + œuf au plat</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="plat-healthy">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Plat Healthy" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Plat Healthy - Poulet / Viande hachée</h3></div>
-                        <p class="dish-desc">Légumes grillés, portion protéinée</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="cordon-bleu">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cordon Bleu à la crème" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Cordon Bleu à la crème</h3></div>
-                        <p class="dish-desc">Poulet farci au fromage, crème onctueuse</p>
+                    
+                    <div class="dish" data-dish="brunch-new">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Brunch New" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">New</h3></div>
+                            <p class="dish-desc">Notre nouvelle création brunch exclusive</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- CAFÉS CHAUDS SECTION -->
-            <div class="menu-section" data-category="cafes-chauds">
-                <div class="section-header"><h2 class="section-title">Cafés et Boissons Chaudes</h2></div>
-                
-                <div class="dish" data-dish="capsule">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Capsule" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Capsule</h3></div>
-                        <p class="dish-desc">Café en capsule</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="cafes-chauds">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Cafés et Boissons Chaudes</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="the">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Thé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="capsule">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Capsule" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Capsule</h3></div>
+                            <p class="dish-desc">Café en capsule</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Thé</h3></div>
-                        <p class="dish-desc">Sélection de thés</p>
+                    
+                    <div class="dish" data-dish="the">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Thé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Thé</h3></div>
+                            <p class="dish-desc">Sélection de thés</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="cafe-lor">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café L'OR" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="cafe-lor">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café L'OR" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Café L'OR</h3></div>
+                            <p class="dish-desc">Café L'OR sélection</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Café L'OR</h3></div>
-                        <p class="dish-desc">Café L'OR sélection</p>
+                    
+                    <div class="dish" data-dish="nespresso">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Nespresso" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Nespresso</h3></div>
+                            <p class="dish-desc">Café Nespresso</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="nespresso">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Nespresso" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="cafe-lait">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café au lait" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Café au lait</h3></div>
+                            <p class="dish-desc">Café au lait crémeux</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Nespresso</h3></div>
-                        <p class="dish-desc">Café Nespresso</p>
+                    
+                    <div class="dish" data-dish="cafe-noisette">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café noisette" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Café noisette</h3></div>
+                            <p class="dish-desc">Café avec une noisette de lait</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="cafe-lait">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café au lait" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="latte-macchiato">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Latte macchiato" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Latte macchiato</h3></div>
+                            <p class="dish-desc">Latte macchiato onctueux</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Café au lait</h3></div>
-                        <p class="dish-desc">Café au lait crémeux</p>
+                    
+                    <div class="dish" data-dish="cappuccino">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cappuccino" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Cappuccino</h3></div>
+                            <p class="dish-desc">Cappuccino traditionnel</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="cafe-noisette">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café noisette" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="cappuccino-special">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cappuccino caramel/chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Cappuccino caramel/chocolat</h3></div>
+                            <p class="dish-desc">Cappuccino au caramel ou chocolat</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Café noisette</h3></div>
-                        <p class="dish-desc">Café avec une noisette de lait</p>
+                    
+                    <div class="dish" data-dish="americano">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Americano" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Americano</h3></div>
+                            <p class="dish-desc">Café américano</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="latte-macchiato">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Latte macchiato" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="mocha">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mocha" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Mocha</h3></div>
+                            <p class="dish-desc">Mocha chocolaté</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Latte macchiato</h3></div>
-                        <p class="dish-desc">Latte macchiato onctueux</p>
+                    
+                    <div class="dish" data-dish="macchiato">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Macchiato" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Macchiato</h3></div>
+                            <p class="dish-desc">Macchiato italien</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="cappuccino">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cappuccino" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Cappuccino</h3></div>
-                        <p class="dish-desc">Cappuccino traditionnel</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="cappuccino-special">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Cappuccino caramel/chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Cappuccino caramel/chocolat</h3></div>
-                        <p class="dish-desc">Cappuccino au caramel ou chocolat</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="americano">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Americano" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Americano</h3></div>
-                        <p class="dish-desc">Café américano</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="mocha">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mocha" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Mocha</h3></div>
-                        <p class="dish-desc">Mocha chocolaté</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="macchiato">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Macchiato" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Macchiato</h3></div>
-                        <p class="dish-desc">Macchiato italien</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="chocolat-chaud">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Chocolat chaud" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Chocolat chaud</h3></div>
-                        <p class="dish-desc">Chocolat chaud crémeux</p>
+                    
+                    <div class="dish" data-dish="chocolat-chaud">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Chocolat chaud" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Chocolat chaud</h3></div>
+                            <p class="dish-desc">Chocolat chaud crémeux</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- CAFÉS GLACÉS SECTION -->
-            <div class="menu-section" data-category="cafes-glaces">
-                <div class="section-header"><h2 class="section-title">Cafés Glacés</h2></div>
-                
-                <div class="dish" data-dish="cafe-glace">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café glacé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Café glacé</h3></div>
-                        <p class="dish-desc">Café frappé glacé</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="cafes-glaces">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Cafés Glacés</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="pistache">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pistache" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="cafe-glace">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Café glacé" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Café glacé</h3></div>
+                            <p class="dish-desc">Café frappé glacé</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pistache</h3></div>
-                        <p class="dish-desc">Café glacé à la pistache</p>
+                    
+                    <div class="dish" data-dish="pistache">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Pistache" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pistache</h3></div>
+                            <p class="dish-desc">Café glacé à la pistache</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="noisette">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Noisette" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="noisette">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Noisette" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Noisette</h3></div>
+                            <p class="dish-desc">Café glacé à la noisette</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Noisette</h3></div>
-                        <p class="dish-desc">Café glacé à la noisette</p>
+                    
+                    <div class="dish" data-dish="caramel">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Caramel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Caramel</h3></div>
+                            <p class="dish-desc">Café glacé au caramel</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="caramel">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Caramel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Caramel</h3></div>
-                        <p class="dish-desc">Café glacé au caramel</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="vanille-coco">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Vanille/coco" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Vanille/coco</h3></div>
-                        <p class="dish-desc">Café glacé à la vanille ou noix de coco</p>
+                    
+                    <div class="dish" data-dish="vanille-coco">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Vanille/coco" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Vanille/coco</h3></div>
+                            <p class="dish-desc">Café glacé à la vanille ou noix de coco</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- SMOOTHIE SECTION -->
-            <div class="menu-section" data-category="smoothie">
-                <div class="section-header"><h2 class="section-title">Smoothie & Milkshake</h2></div>
-                
-                <div class="dish" data-dish="smoothie-chocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
-                        <p class="dish-desc">Smoothie ou milkshake au chocolat</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="smoothie">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Smoothie & Milkshake</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="smoothie-banane">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="smoothie-chocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Chocolat</h3></div>
+                            <p class="dish-desc">Smoothie ou milkshake au chocolat</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
-                        <p class="dish-desc">Smoothie ou milkshake à la banane</p>
+                    
+                    <div class="dish" data-dish="smoothie-banane">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
+                            <p class="dish-desc">Smoothie ou milkshake à la banane</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="smoothie-vanille">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Vanille" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="smoothie-vanille">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Vanille" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Vanille</h3></div>
+                            <p class="dish-desc">Smoothie ou milkshake à la vanille</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Vanille</h3></div>
-                        <p class="dish-desc">Smoothie ou milkshake à la vanille</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="smoothie-fruits-rouges">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Fruits rouges" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Fruits rouges</h3></div>
-                        <p class="dish-desc">Smoothie ou milkshake aux fruits rouges</p>
+                    
+                    <div class="dish" data-dish="smoothie-fruits-rouges">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Smoothie Fruits rouges" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Fruits rouges</h3></div>
+                            <p class="dish-desc">Smoothie ou milkshake aux fruits rouges</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- SPÉCIAUX SECTION -->
-            <div class="menu-section" data-category="speciaux">
-                <div class="section-header"><h2 class="section-title">Spéciaux</h2></div>
-                
-                <div class="dish" data-dish="special-banane-chocolat">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Banane-Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Banane-Chocolat</h3></div>
-                        <p class="dish-desc">Combinaison banane et chocolat</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="speciaux">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Spéciaux</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="special-bueno">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Bueno" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="special-banane-chocolat">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Banane-Chocolat" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Banane-Chocolat</h3></div>
+                            <p class="dish-desc">Combinaison banane et chocolat</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Bueno</h3></div>
-                        <p class="dish-desc">Spécial Kinder Bueno</p>
+                    
+                    <div class="dish" data-dish="special-bueno">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Bueno" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Bueno</h3></div>
+                            <p class="dish-desc">Spécial Kinder Bueno</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="special-snickers">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Snickers" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="special-snickers">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Snickers" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Snickers</h3></div>
+                            <p class="dish-desc">Spécial Snickers</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Snickers</h3></div>
-                        <p class="dish-desc">Spécial Snickers</p>
+                    
+                    <div class="dish" data-dish="special-avocat-miel">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Avocat-Miel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Avocat-Miel</h3></div>
+                            <p class="dish-desc">Combinaison avocat et miel</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="special-avocat-miel">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Avocat-Miel" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Avocat-Miel</h3></div>
-                        <p class="dish-desc">Combinaison avocat et miel</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="special-fraise">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Fraise" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Fraise</h3></div>
-                        <p class="dish-desc">Spécial fraises fraîches</p>
+                    
+                    <div class="dish" data-dish="special-fraise">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Fraise" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Fraise</h3></div>
+                            <p class="dish-desc">Spécial fraises fraîches</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- MOJITO SECTION -->
-            <div class="menu-section" data-category="mojito">
-                <div class="section-header"><h2 class="section-title">Mojito</h2></div>
-                
-                <div class="dish" data-dish="mojito-classique">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Classique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Classique</h3></div>
-                        <p class="dish-desc">Menthe, citron - le classique</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="mojito">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Mojito</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="mojito-mixed">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Mixed" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="mojito-classique">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Classique" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Classique</h3></div>
+                            <p class="dish-desc">Menthe, citron - le classique</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Mixed</h3></div>
-                        <p class="dish-desc">Menthe, citron - mélange de saveurs</p>
+                    
+                    <div class="dish" data-dish="mojito-mixed">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Mixed" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Mixed</h3></div>
+                            <p class="dish-desc">Menthe, citron - mélange de saveurs</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-grenadine">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Grenadine" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="mojito-grenadine">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Grenadine" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Grenadine</h3></div>
+                            <p class="dish-desc">Menthe, grenadine</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Grenadine</h3></div>
-                        <p class="dish-desc">Menthe, grenadine</p>
+                    
+                    <div class="dish" data-dish="mojito-black">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Black" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Black</h3></div>
+                            <p class="dish-desc">Citron, cassis</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-black">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Black" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="mojito-blue">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Blue" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Blue</h3></div>
+                            <p class="dish-desc">Citron, curaçao bleu</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Black</h3></div>
-                        <p class="dish-desc">Citron, cassis</p>
+                    
+                    <div class="dish" data-dish="mojito-red">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Red" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Red</h3></div>
+                            <p class="dish-desc">Fraise, citron</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-blue">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Blue" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="mojito-kiwi">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Kiwi" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Kiwi</h3></div>
+                            <p class="dish-desc">Kiwi, menthe</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Blue</h3></div>
-                        <p class="dish-desc">Citron, curaçao bleu</p>
+                    
+                    <div class="dish" data-dish="mojito-pausa">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pausa</h3></div>
+                            <p class="dish-desc">Citron, sirop spécial maison</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-red">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Red" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="mojito-bresilien">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Brésilien" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Brésilien</h3></div>
+                            <p class="dish-desc">Menthe, citron vert</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Red</h3></div>
-                        <p class="dish-desc">Fraise, citron</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-kiwi">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Kiwi" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Kiwi</h3></div>
-                        <p class="dish-desc">Kiwi, menthe</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-pausa">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Pausa" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pausa</h3></div>
-                        <p class="dish-desc">Citron, sirop spécial maison</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-bresilien">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Brésilien" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Brésilien</h3></div>
-                        <p class="dish-desc">Menthe, citron vert</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="mojito-golden">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Golden" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Golden</h3></div>
-                        <p class="dish-desc">Avec Red Bull</p>
+                    
+                    <div class="dish" data-dish="mojito-golden">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Mojito Golden" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Golden</h3></div>
+                            <p class="dish-desc">Avec Red Bull</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- JUS SECTION -->
-            <div class="menu-section" data-category="jus">
-                <div class="section-header"><h2 class="section-title">Jus</h2></div>
-                
-                <div class="dish" data-dish="jus-citron">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Citron" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Citron</h3></div>
-                        <p class="dish-desc">Jus de citron frais</p>
-                    </div>
+            <div class="menu-section collapsible" data-category="jus">
+                <div class="section-header collapsible-header">
+                    <h2 class="section-title">Jus</h2>
+                    <span class="collapse-icon">+</span>
                 </div>
-                
-                <div class="dish" data-dish="jus-orange">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Orange" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                <div class="section-content" style="display: none;">
+                    <div class="dish" data-dish="jus-citron">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Citron" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Citron</h3></div>
+                            <p class="dish-desc">Jus de citron frais</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Orange</h3></div>
-                        <p class="dish-desc">Jus d'orange pressé</p>
+                    
+                    <div class="dish" data-dish="jus-orange">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Orange" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Orange</h3></div>
+                            <p class="dish-desc">Jus d'orange pressé</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="jus-banane">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                    
+                    <div class="dish" data-dish="jus-banane">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Banane" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
+                            <p class="dish-desc">Jus de banane naturel</p>
+                        </div>
                     </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Banane</h3></div>
-                        <p class="dish-desc">Jus de banane naturel</p>
+                    
+                    <div class="dish" data-dish="jus-pasteque">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Pastèque" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Pastèque</h3></div>
+                            <p class="dish-desc">Jus de pastèque rafraîchissant</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="dish" data-dish="jus-pasteque">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Pastèque" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Pastèque</h3></div>
-                        <p class="dish-desc">Jus de pastèque rafraîchissant</p>
-                    </div>
-                </div>
-                
-                <div class="dish" data-dish="jus-mangue">
-                    <div class="dish-model">
-                        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Mangue" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
-                        <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="dish-info">
-                        <div class="dish-header"><h3 class="dish-name">Mangue</h3></div>
-                        <p class="dish-desc">Jus de mangue exotique</p>
+                    
+                    <div class="dish" data-dish="jus-mangue">
+                        <div class="dish-model">
+                            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Jus Mangue" camera-controls auto-rotate ar environment-image="neutral"></model-viewer>
+                            <div class="enlarge-icon" title="Agrandir"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="dish-info">
+                            <div class="dish-header"><h3 class="dish-name">Mangue</h3></div>
+                            <p class="dish-desc">Jus de mangue exotique</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1405,26 +1529,64 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Category filtering
             const categoryButtons = document.querySelectorAll('.category-btn');
             const menuSections = document.querySelectorAll('.menu-section');
             
             categoryButtons.forEach(button => {
                 button.addEventListener('click', function() {
+                    // Update active category button
                     categoryButtons.forEach(btn => btn.classList.remove('active'));
                     this.classList.add('active');
                     
+                    // Get selected category
                     const category = this.getAttribute('data-category');
                     
+                    // Show/hide sections
                     menuSections.forEach(section => {
-                        if (section.getAttribute('data-category') === category) {
+                        const sectionCategory = section.getAttribute('data-category');
+                        if (sectionCategory === category) {
                             section.style.display = 'block';
+                            // Open the section when category is clicked
+                            const content = section.querySelector('.section-content');
+                            const icon = section.querySelector('.collapse-icon');
+                            if (content && content.style.display === 'none') {
+                                content.style.display = 'block';
+                                icon.textContent = '−';
+                            }
                         } else {
                             section.style.display = 'none';
                         }
                     });
+                    
+                    // Scroll to first section
+                    const firstSection = document.querySelector(`.menu-section[data-category="${category}"]`);
+                    if (firstSection) {
+                        firstSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 });
             });
             
+            // Collapsible sections
+            const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+            
+            collapsibleHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const section = this.closest('.menu-section');
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.collapse-icon');
+                    
+                    if (content.style.display === 'none' || content.style.display === '') {
+                        content.style.display = 'block';
+                        icon.textContent = '−';
+                    } else {
+                        content.style.display = 'none';
+                        icon.textContent = '+';
+                    }
+                });
+            });
+            
+            // 3D Model Modal
             const modal = document.getElementById('modelModal');
             const closeModalBtn = document.getElementById('closeModal');
             const modalModelViewer = document.getElementById('modalModelViewer');
@@ -1453,6 +1615,15 @@
                 if (e.target === modal) {
                     modal.style.display = 'none';
                     document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Initialize: Only show first section
+            menuSections.forEach((section, index) => {
+                if (index === 0) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
                 }
             });
         });
